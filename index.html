@@ -3,11 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>जल कर प्रबंधन पोर्टल — डेमो</title>
+<title>जल कर प्रबंधन पोर्टल</title>
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:"Nirmala UI","Mangal",system-ui,sans-serif;background:#f4faf6;color:#173126}button,input,select{font:inherit}button{cursor:pointer;border:0;border-radius:9px;padding:10px 14px}.primary{background:#07552a;color:#fff;font-weight:700}.secondary{background:#e4f1e7;color:#174b2b}.full{width:100%}.hidden{display:none!important}.app{min-height:100vh;display:grid;grid-template-columns:260px 1fr}.sidebar{background:#07552a;color:#f3fbf5;padding:22px 16px;display:flex;flex-direction:column;gap:18px}.brand{display:flex;gap:12px;align-items:center;margin-bottom:8px}.brand b{display:block;font-size:18px}.brand small{display:block;color:#d1e6d6;font-size:12px;margin-top:4px}.emblem,.brand-mark{width:46px;height:46px;border-radius:12px;background:#d9eddf;color:#07552a;display:grid;place-items:center;font-weight:900}.small-label{font-size:12px;color:#d1e6d6;margin-bottom:-12px}.sidebar select{width:100%;padding:11px;border-radius:8px;border:0}.sidebar nav{display:grid;gap:7px}.nav{background:transparent;color:#e8f5eb;text-align:left;padding:12px;border-radius:8px}.nav.active,.nav:hover{background:#176b3a;color:#fff}.sidebar-note{margin-top:auto;font-size:12px;line-height:1.6;color:#c9e0cf}.main{padding:26px;min-width:0}header,.panel-head,.welcome,.bottom-row{display:flex;align-items:center;justify-content:space-between;gap:16px}header{margin-bottom:24px}h1{font-size:30px;margin:5px 0}h2{font-size:22px;margin:0 0 8px}h3{margin:0 0 8px}.eyebrow,.muted,.welcome p{color:#607568}.eyebrow{font-size:12px}.user-chip{display:flex;gap:12px;align-items:center;background:#fff;border:1px solid #d8e8dc;padding:10px 14px;border-radius:12px}.user-chip span{font-size:12px;color:#287044}.welcome{margin-bottom:18px}.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:18px 0}.cards.compact{grid-template-columns:repeat(3,minmax(0,1fr))}.metric,.panel{background:#fff;border:1px solid #dce9df;border-radius:14px;padding:18px;box-shadow:0 4px 14px #07552a0a}.metric span{display:block;color:#627969;font-size:13px}.metric strong{display:block;font-size:27px;margin:10px 0}.panel{margin-bottom:18px}.panel p{margin:4px 0 12px}.table-wrap{overflow:auto;margin-top:14px}table{width:100%;border-collapse:collapse;min-width:650px}th,td{text-align:left;padding:12px 10px;border-bottom:1px solid #e0ebe2;font-size:14px}th{background:#eaf5ed;color:#315d40;font-weight:700}td{vertical-align:top}.empty{text-align:center;color:#6b806f;padding:24px}.toolbar{display:flex;gap:10px;margin:14px 0}.toolbar input{flex:1}input,select{width:100%;padding:11px 12px;border:1px solid #c8dccd;border-radius:8px;background:#fff;color:#173126}label{display:grid;gap:7px;font-size:13px;color:#385844}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:16px}.form-grid .full{grid-column:1/-1}.split{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.quick-actions{display:flex;gap:10px;margin:16px 0}.bottom-row{margin-top:22px}.bottom-row .muted{font-size:12px}.receipt{margin-top:18px;border:1px dashed #9db9a3;padding:16px;border-radius:10px}.login-wrap{min-height:100vh;display:grid;place-items:center;padding:20px;background:linear-gradient(135deg,#e8f1f8,#f7fbf8)}.login-card{width:min(460px,100%);background:#fff;padding:30px;border:1px solid #d8e8dc;border-radius:18px;box-shadow:0 18px 55px #07552a14}.brand-mark{margin-bottom:18px}.login-card h1{font-size:26px}.login-card form{display:grid;gap:14px;margin-top:20px}.demo-credentials{margin-top:22px;padding:14px;background:#edf7ef;border-radius:10px;font-size:13px}.demo-credentials p{margin:8px 0}.error{color:#b42318;margin:0;font-size:13px}.modal{position:fixed;inset:0;background:#063c2799;display:grid;place-items:center;padding:20px}.modal-card{background:#fff;width:min(700px,100%);max-height:90vh;overflow:auto;padding:22px;border-radius:16px}.toast{position:fixed;bottom:22px;right:22px;background:#07552a;color:#fff;padding:13px 18px;border-radius:10px;opacity:0;pointer-events:none;transition:.2s;max-width:calc(100% - 44px)}.toast.show{opacity:1}.tiny{padding:6px 9px;font-size:12px}.status{font-weight:700}@media(max-width:900px){.app{grid-template-columns:1fr}.sidebar{padding:14px}.sidebar nav{grid-template-columns:repeat(2,minmax(0,1fr))}.sidebar-note{margin-top:0}.main{padding:16px}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.split{grid-template-columns:1fr}}@media(max-width:540px){.cards,.cards.compact{grid-template-columns:1fr 1fr}.form-grid{grid-template-columns:1fr}.form-grid .full{grid-column:auto}.toolbar,.quick-actions{flex-direction:column}header{align-items:flex-start}.user-chip{flex-direction:column;align-items:flex-start}}
+*{box-sizing:border-box}body{margin:0;font-family:"Nirmala UI","Mangal",system-ui,sans-serif;background:#f4faf6;color:#173126}button,input,select{font:inherit}button{cursor:pointer;border:0;border-radius:9px;padding:10px 14px}.primary{background:#07552a;color:#fff;font-weight:700}.secondary{background:#e4f1e7;color:#174b2b}.full{width:100%}.hidden{display:none!important}.app{min-height:100vh;display:grid;grid-template-columns:260px 1fr}.sidebar{background:#07552a;color:#f3fbf5;padding:22px 16px;display:flex;flex-direction:column;gap:18px}.brand{display:flex;gap:12px;align-items:center;margin-bottom:8px}.brand b{display:block;font-size:18px}.brand small{display:block;color:#d1e6d6;font-size:12px;margin-top:4px}.emblem,.brand-mark{width:46px;height:46px;border-radius:12px;background:#d9eddf;color:#07552a;display:grid;place-items:center;font-weight:900}.small-label{font-size:12px;color:#d1e6d6;margin-bottom:-12px}.sidebar select{width:100%;padding:11px;border-radius:8px;border:0}.sidebar nav{display:grid;gap:7px}.nav{background:transparent;color:#e8f5eb;text-align:left;padding:12px;border-radius:8px}.nav.active,.nav:hover{background:#176b3a;color:#fff}.sidebar-note{margin-top:auto;font-size:12px;line-height:1.6;color:#c9e0cf}.main{padding:26px;min-width:0}header,.panel-head,.welcome,.bottom-row{display:flex;align-items:center;justify-content:space-between;gap:16px}header{margin-bottom:24px}h1{font-size:30px;margin:5px 0}h2{font-size:22px;margin:0 0 8px}h3{margin:0 0 8px}.eyebrow,.muted,.welcome p{color:#607568}.eyebrow{font-size:12px}.user-chip{display:flex;gap:12px;align-items:center;background:#fff;border:1px solid #d8e8dc;padding:10px 14px;border-radius:12px}.user-chip span{font-size:12px;color:#287044}.welcome{margin-bottom:18px}.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:18px 0}.cards.compact{grid-template-columns:repeat(3,minmax(0,1fr))}.metric,.panel{background:#fff;border:1px solid #dce9df;border-radius:14px;padding:18px;box-shadow:0 4px 14px #07552a0a}.metric span{display:block;color:#627969;font-size:13px}.metric strong{display:block;font-size:27px;margin:10px 0}.panel{margin-bottom:18px}.panel p{margin:4px 0 12px}.table-wrap{overflow:auto;margin-top:14px}table{width:100%;border-collapse:collapse;min-width:650px}th,td{text-align:left;padding:12px 10px;border-bottom:1px solid #e0ebe2;font-size:14px}th{background:#eaf5ed;color:#315d40;font-weight:700}td{vertical-align:top}.empty{text-align:center;color:#6b806f;padding:24px}.toolbar{display:flex;gap:10px;margin:14px 0}.toolbar input{flex:1}input,select{width:100%;padding:11px 12px;border:1px solid #c8dccd;border-radius:8px;background:#fff;color:#173126}label{display:grid;gap:7px;font-size:13px;color:#385844}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:16px}.form-grid .full{grid-column:1/-1}.split{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.quick-actions{display:flex;gap:10px;margin:16px 0}.bottom-row{margin-top:22px}.bottom-row .muted{font-size:12px}.receipt{margin-top:18px;border:1px dashed #9db9a3;padding:16px;border-radius:10px}.login-wrap{min-height:100vh;display:grid;place-items:center;padding:20px;background:linear-gradient(135deg,#e8f1f8,#f7fbf8)}.login-card{width:min(460px,100%);background:#fff;padding:30px;border:1px solid #d8e8dc;border-radius:18px;box-shadow:0 18px 55px #07552a14}.brand-mark{margin-bottom:18px}.login-card h1{font-size:26px}.login-card form{display:grid;gap:14px;margin-top:20px}.demo-credentials{margin-top:22px;padding:14px;background:#edf7ef;border-radius:10px;font-size:13px}.demo-credentials p{margin:8px 0}.message-options{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}.message-option{display:flex;align-items:center;gap:9px;min-width:145px;padding:12px 14px;background:#f2f8f3;border:1px solid #c8dccd;border-radius:10px;font-size:15px;color:#174b2b}.message-option input{width:19px;height:19px;accent-color:#07552a}.message-actions{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.action-link{display:inline-block;text-decoration:none;border-radius:9px;padding:10px 14px;font-weight:600}.error{color:#b42318;margin:0;font-size:13px}.modal{position:fixed;inset:0;background:#063c2799;display:grid;place-items:center;padding:20px}.modal-card{background:#fff;width:min(700px,100%);max-height:90vh;overflow:auto;padding:22px;border-radius:16px}.toast{position:fixed;bottom:22px;right:22px;background:#07552a;color:#fff;padding:13px 18px;border-radius:10px;opacity:0;pointer-events:none;transition:.2s;max-width:calc(100% - 44px)}.toast.show{opacity:1}.tiny{padding:6px 9px;font-size:12px}.status{font-weight:700}@media(max-width:900px){.app{grid-template-columns:1fr}.sidebar{padding:14px}.sidebar nav{grid-template-columns:repeat(2,minmax(0,1fr))}.sidebar-note{margin-top:0}.main{padding:16px}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.split{grid-template-columns:1fr}}@media(max-width:540px){.cards,.cards.compact{grid-template-columns:1fr 1fr}.form-grid{grid-template-columns:1fr}.form-grid .full{grid-column:auto}.toolbar,.quick-actions{flex-direction:column}header{align-items:flex-start}.user-chip{flex-direction:column;align-items:flex-start}}
 
 .month-checkboxes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding:12px;border:1px solid #c8dccd;border-radius:10px;background:#f5faf6;max-height:300px;overflow:auto}.month-check{display:flex;align-items:center;gap:8px;padding:8px;border:1px solid #dce9df;border-radius:8px;background:#fff;color:#294b34;font-size:14px}.month-check input{width:18px;height:18px;flex:0 0 18px;accent-color:#07552a}.month-check:has(input:checked){border-color:#31804c;background:#e7f5e9}@media(max-width:540px){.month-checkboxes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Report export buttons and report-only print layout */
+.report-export-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+@media(max-width:540px){.panel-head{align-items:flex-start;flex-direction:column}.report-export-actions{width:100%;justify-content:flex-start}.report-export-actions button{flex:1}}
+@media print {
+  body.printing-report * { visibility:hidden !important; }
+  body.printing-report #page-reports,
+  body.printing-report #page-reports * { visibility:visible !important; }
+  body.printing-report #page-reports { display:block !important; position:absolute !important; left:0 !important; top:0 !important; width:100% !important; padding:0 !important; margin:0 !important; }
+  body.printing-report #page-reports .report-export-actions,
+  body.printing-report #page-reports .toolbar { display:none !important; }
+  body.printing-report #page-reports .panel { box-shadow:none !important; border:0 !important; padding:0 !important; }
+  body.printing-report #page-reports .table-wrap { overflow:visible !important; }
+  body.printing-report #page-reports table { min-width:0 !important; width:100% !important; }
+  body.printing-report #page-reports th, body.printing-report #page-reports td { font-size:10pt !important; padding:6px !important; }
+}
 
 /* Print only the receipt box; hide the sidebar, payment form and history. */
 @media print {
@@ -38,6 +54,28 @@
   .modal, .modal-card, .dialog { max-width:calc(100vw - 20px); width:calc(100vw - 20px); }
 }
 
+
+.upi-payment-panel{border:1px solid #b7d8d1;border-radius:14px;padding:16px;background:#f4fbf9;text-align:center}
+.upi-payment-panel h3{margin-top:0}
+
+.upi-payment-panel{background:linear-gradient(145deg,#f1fbf7,#f4f8ff);border:1px solid #b6e8d8;border-radius:18px;padding:18px;box-shadow:0 8px 22px rgba(12,94,73,.08)}
+.upi-payment-panel h3{margin:0 0 8px;color:#075b47;font-size:1.35rem}
+.upi-brand{display:flex;align-items:center;justify-content:center;gap:10px;background:#fff;border:1px solid #e6d9ff;border-radius:14px;padding:12px;margin:12px 0;color:#5420a8;font-weight:800;font-size:1.3rem}
+.upi-brand-mark{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:#5f259f;color:#fff;font-size:1.6rem}
+.upi-pay-layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:14px;align-items:stretch}
+.upi-qr-frame{background:#fff;border:2px solid #6d35b4;border-radius:16px;padding:10px;display:flex;align-items:center;justify-content:center;min-width:0}
+.upi-qr-image{display:block;width:100%;max-width:330px;height:auto;object-fit:contain;background:#fff}
+.upi-details{background:#e8f5ff;border:1px solid #c5e4fb;border-radius:15px;padding:15px;display:flex;flex-direction:column;justify-content:center;gap:10px;overflow-wrap:anywhere}
+.upi-amount-label{font-weight:700;color:#183d55}
+.upi-amount-value{background:#087b61;color:white;border-radius:12px;text-align:center;padding:12px 8px;font-size:clamp(1.6rem,4vw,2.2rem);font-weight:900}
+.upi-id-box{background:#f0e7ff;border:1px solid #d6c0ff;border-radius:10px;padding:10px;color:#4d168e;font-weight:800}
+.upi-howto{background:#e7f8f2;border:1px solid #b6e8d8;border-radius:14px;padding:13px;margin-top:14px}
+.upi-howto strong{color:#075b47}
+.upi-confirm{display:flex;align-items:flex-start;gap:9px;background:#fff;border:1px solid #b6e8d8;border-radius:12px;padding:12px;margin-top:14px}
+@media(max-width:650px){.upi-pay-layout{grid-template-columns:1fr}.upi-qr-image{max-width:300px}.upi-details{gap:8px}}
+
+.upi-confirm{display:flex;align-items:flex-start;gap:10px;text-align:left;margin:14px 0;font-weight:600}
+.upi-confirm input{width:20px;height:20px;flex:0 0 auto;margin-top:2px}
 </style>
 </head>
 <body>
@@ -46,7 +84,6 @@
     <div class="brand-mark">जल</div>
     <p class="eyebrow">ग्राम पंचायत नल जल कर प्रबंधन</p>
     <h1>जल कर प्रबंधन पोर्टल</h1>
-    <p class="muted">स्थानीय डेमो — वास्तविक सरकारी पोर्टल नहीं</p>
     <form id="loginForm">
       <label>भूमिका चुनें<select id="loginRole" required><option value="admin">Admin</option><option value="panchayat">सरपंच / सचिव</option><option value="operator">पंप ऑपरेटर</option></select></label>
       <label>यूज़रनेम<input id="loginUsername" autocomplete="username" required placeholder="यूज़रनेम"></label>
@@ -54,16 +91,11 @@
       <button class="primary full" type="submit">लॉगिन करें</button>
       <p id="loginError" class="error"></p>
     </form>
-    <div class="demo-credentials">
-      <b>पहली बार डेमो लॉगिन</b>
-      <p>Admin: <code>admin</code> / <code>admin123</code></p>
-      <small>एडमिन लॉगिन करके नए सरपंच/सचिव और ऑपरेटर बना सकता है।</small>
-    </div>
   </div>
 </section>
 <div id="appScreen" class="app hidden">
   <aside class="sidebar">
-    <div class="brand"><div class="emblem">जल</div><div><b>जल कर प्रबंधन</b><small>ग्राम पंचायत डेमो पोर्टल</small></div></div>
+    <div class="brand"><div class="emblem">जल</div><div><b>जल कर प्रबंधन</b><small>ग्राम पंचायत पोर्टल</small></div></div>
     <label class="small-label" for="panchayatSelect">ग्राम पंचायत</label>
     <select id="panchayatSelect"></select>
     <nav>
@@ -74,7 +106,6 @@
       <button class="nav" id="settingsNav" data-page="settings">पंचायत / टैक्स सेटिंग</button>
       <button class="nav" id="usersNav" data-page="users">यूज़र प्रबंधन</button>
     </nav>
-    <div class="sidebar-note">यह स्थानीय डेमो है। डेटा इसी ब्राउज़र में सेव होता है।</div>
     <button id="logoutBtn" class="secondary full">लॉगआउट</button>
   </aside>
   <main class="main">
@@ -100,21 +131,40 @@
     <section id="page-payments" class="page hidden">
       <div class="split"><div class="panel"><h2>भुगतान दर्ज करें</h2><form id="paymentForm" class="form-grid">
         <label>हितग्राही<select id="paymentPerson" required></select></label><label>दिनांक<input id="paymentDate" type="date" required></label>
-        <div class="full"><label>किन महीनों का टैक्स जमा कर रहे हैं? नीचे हर महीने के सामने टिक करें।</label><div id="paymentBillMonth" class="month-checkboxes" aria-label="टैक्स के महीने चुनें"></div><small class="muted">जितने महीनों पर टिक करेंगे, उतने महीनों का टैक्स राशि में अपने-आप जुड़ जाएगा। पहले से जमा महीने नहीं दिखेंगे।</small></div><label>राशि (₹)<input id="paymentAmount" type="number" min="1" required></label><label>तरीका<select id="paymentMethod"><option>नकद</option><option>बैंक</option><option>अन्य</option><option>UPI (डेमो नहीं)</option></select></label>
-        <label class="full">टिप्पणी<input id="paymentNote"></label><label class="full sms-option"><input id="sendPaymentSms" type="checkbox" checked> भुगतान सेव होने पर हितग्राही के दर्ज मोबाइल पर SMS रसीद भेजने का विकल्प</label><div class="full muted">नोट: अभी यह डेमो विकल्प है। असली SMS भेजने के लिए SMS प्रदाता और सुरक्षित सर्वर कनेक्शन जोड़ना होगा।</div><div class="full"><button class="primary" type="submit">भुगतान सेव करें</button></div>
+        <div class="full"><label>किन महीनों का टैक्स जमा कर रहे हैं? नीचे हर महीने के सामने टिक करें।</label><div id="paymentBillMonth" class="month-checkboxes" aria-label="टैक्स के महीने चुनें"></div><small class="muted">जितने महीनों पर टिक करेंगे, उतने महीनों का टैक्स राशि में अपने-आप जुड़ जाएगा। पहले से जमा महीने नहीं दिखेंगे।</small></div><label>राशि (₹)<input id="paymentAmount" type="number" min="1" required></label><label>तरीका<select id="paymentMethod"><option>नकद</option><option>बैंक</option><option>अन्य</option><option>UPI</option></select></label>
+        <div id="upiPaymentPanel" class="full upi-payment-panel hidden">
+          <h3>ग्राम जल सेवा — UPI भुगतान</h3>
+          <p class="muted">नीचे दिए गए PhonePe QR को स्कैन करके भुगतान करें।</p>
+          <div class="upi-brand"><span class="upi-brand-mark">पे</span><span>PhonePe भुगतान</span></div>
+          <div class="upi-pay-layout">
+            <div class="upi-qr-frame"><img src="phonepe_qr.jpg" alt="असली PhonePe UPI QR Code" class="upi-qr-image"></div>
+            <div class="upi-details">
+              <div class="upi-amount-label">भुगतान राशि</div>
+              <div class="upi-amount-value" id="upiDisplayAmount">₹0</div>
+              <div class="upi-amount-label">UPI ID</div>
+              <div class="upi-id-box">9669486121-5@ybl</div>
+              <div class="upi-amount-label">प्राप्तकर्ता</div>
+              <strong>Govind Parmar</strong>
+            </div>
+          </div>
+          <div class="upi-howto"><strong>भुगतान करने के चरण</strong><p>1. PhonePe खोलें। 2. QR स्कैन करें। 3. ऊपर दिखाई गई राशि दर्ज करें। 4. भुगतान पूरा होने के बाद खाते में राशि आने की पुष्टि करें।</p></div>
+          <small class="muted">यह स्थिर QR है, इसलिए राशि ऐप में स्वयं दर्ज करनी होगी। पोर्टल भुगतान को अपने-आप सत्यापित नहीं करता।</small>
+          <label class="upi-confirm"><input type="checkbox" id="upiReceivedConfirm"> मैंने खाते/PhonePe में भुगतान प्राप्त होने की जाँच कर ली है और अब रसीद बनाने की पुष्टि करता/करती हूँ।</label>
+        </div>
+        <label class="full">टिप्पणी<input id="paymentNote"></label><div class="full"><label>भुगतान रसीद का संदेश भेजने का तरीका</label><div class="message-options"><label class="message-option"><input id="sendPaymentWhatsApp" type="checkbox"> <span>WhatsApp</span></label><label class="message-option"><input id="sendPaymentSms" type="checkbox"> <span>SMS</span></label></div><small class="muted">एक या दोनों विकल्प चुनें। संदेश संबंधित ऐप में खुलेगा; भेजने के लिए ऐप में Send दबाएँ।</small></div><div class="full"><button class="primary" type="submit">भुगतान सेव करें</button></div>
       </form><div id="receipt" class="receipt hidden"></div></div>
       <div class="panel"><h2>भुगतान हिस्ट्री</h2><div class="table-wrap"><table><thead><tr><th>रसीद</th><th>नाम</th><th>टैक्स का महीना</th><th>दिनांक</th><th>राशि</th></tr></thead><tbody id="paymentRows"></tbody></table></div></div></div>
     </section>
     <section id="page-reports" class="page hidden">
-      <div class="panel"><div class="panel-head"><h2>वसूली रिपोर्ट</h2><button class="secondary" id="exportBtn">CSV डाउनलोड</button></div><div class="cards compact"><div class="metric"><span>कुल बिल</span><strong id="reportBilled">₹0</strong></div><div class="metric"><span>कुल भुगतान</span><strong id="reportPaid">₹0</strong></div><div class="metric"><span>बकाया</span><strong id="reportDue">₹0</strong></div></div><div class="toolbar"><input id="reportSearch" placeholder="नाम / कनेक्शन खोजें"><select id="reportStatus"><option value="all">सभी</option><option value="due">बकाया</option><option value="paid">पूरा जमा</option></select></div><div class="table-wrap"><table><thead><tr><th>कनेक्शन</th><th>हितग्राही</th><th>कुल बिल</th><th>कुल जमा</th><th>बकाया</th></tr></thead><tbody id="reportRows"></tbody></table></div></div>
+      <div class="panel"><div class="panel-head"><h2>वसूली रिपोर्ट</h2><div class="report-export-actions"><button class="secondary" id="exportBtn">CSV डाउनलोड</button><button class="secondary" id="exportExcelBtn">Excel डाउनलोड</button><button class="secondary" id="exportPdfBtn">PDF डाउनलोड / प्रिंट</button></div></div><div class="cards compact"><div class="metric"><span>कुल बिल</span><strong id="reportBilled">₹0</strong></div><div class="metric"><span>कुल भुगतान</span><strong id="reportPaid">₹0</strong></div><div class="metric"><span>बकाया</span><strong id="reportDue">₹0</strong></div></div><div class="panel monthly-report-panel"><div class="panel-head"><h3>महीने के अनुसार बिल और वसूली</h3><label>महीना चुनें <select id="reportMonth"></select></label></div><div class="cards compact"><div class="metric"><span>चुने महीने का बिल</span><strong id="monthBilled">₹0</strong></div><div class="metric"><span>चुने महीने में जमा</span><strong id="monthPaid">₹0</strong></div><div class="metric"><span>चुने महीने का बकाया</span><strong id="monthDue">₹0</strong></div></div><p class="muted">महीना चुनकर जनवरी, फरवरी, मार्च आदि की अलग-अलग वसूली देखें।</p><div class="table-wrap"><table><thead><tr><th>कनेक्शन</th><th>हितग्राही</th><th>महीने का बिल</th><th>महीने में जमा</th><th>महीने का बकाया</th></tr></thead><tbody id="monthReportRows"></tbody></table></div></div><div class="toolbar"><input id="reportSearch" placeholder="नाम / कनेक्शन खोजें"><select id="reportStatus"><option value="all">सभी</option><option value="due">बकाया</option><option value="paid">पूरा जमा</option></select></div><div class="table-wrap"><table><thead><tr><th>कनेक्शन</th><th>हितग्राही</th><th>कुल बिल</th><th>कुल जमा</th><th>बकाया</th></tr></thead><tbody id="reportRows"></tbody></table></div></div>
     </section>
     <section id="page-settings" class="page hidden">
       <div class="split"><div class="panel"><h2>नई ग्राम पंचायत जोड़ें</h2><form id="panchayatForm" class="form-grid"><label>आधिकारिक जिला<select id="officialDistrict" required><option value="">जिला चुनें</option></select></label><label>तहसील / उपजिला<select id="officialTehsil" required disabled><option value="">पहले जिला चुनें</option></select></label><label class="full">आधिकारिक ग्राम पंचायत<select id="officialPanchayat" disabled><option value="">पहले तहसील चुनें</option></select><small class="muted">यह सूची आपके दिए हुए मध्य प्रदेश LGD Village-to-Gram-Panchayat Mapping PDF से बनाई गई है। जिन गाँवों का पंचायत कोड सूची में खाली है, वे चयन में शामिल नहीं होंगे।</small></label><label class="full">इस पंचायत के गाँव (अल्पविराम से अलग करें)<textarea id="newVillages" rows="3" placeholder="आधिकारिक पंचायत चुनने पर गाँव भरेंगे" readonly></textarea><small class="muted">पंचायत चुनने पर मैपिंग में दर्ज गाँव अपने-आप आएँगे। पहले से मौजूद पंचायत या गाँव के रिकॉर्ड नहीं बदले जाएँगे।</small></label><div class="full"><button class="primary">पंचायत जोड़ें</button></div></form></div>
-      <div class="panel"><h2>टैक्स सेटिंग</h2><form id="taxForm" class="form-grid"><label class="full">मासिक नल टैक्स (₹)<input id="taxAmount" type="number" min="0" required></label><div class="full"><button class="primary">टैक्स सेव करें</button></div></form><p class="muted">यह डेमो बिल अनुमान लगाता है; इसे वास्तविक लेखा प्रणाली न मानें।</p></div></div>
+      <div class="panel"><h2>टैक्स सेटिंग</h2><form id="taxForm" class="form-grid"><label class="full">मासिक नल टैक्स (₹)<input id="taxAmount" type="number" min="0" required></label><div class="full"><button class="primary">टैक्स सेव करें</button></div></form></div></div>
       <div class="panel"><h2>डेटा बैकअप और पुनर्स्थापना</h2><p class="muted">अपने रिकॉर्ड की अतिरिक्त कॉपी नियमित रूप से सुरक्षित रखें। Restore करने पर इस ब्राउज़र के मौजूदा रिकॉर्ड चुनी गई बैकअप फाइल के रिकॉर्ड से बदलेंगे। पहले मौजूदा बैकअप डाउनलोड कर लें।</p><div class="quick-actions"><button type="button" class="primary" id="backupJsonBtn">पूरा डेटा बैकअप डाउनलोड</button><label class="secondary" style="display:inline-flex;align-items:center;cursor:pointer">बैकअप फाइल से Restore करें<input type="file" id="restoreJsonFile" accept="application/json,.json" style="display:none"></label></div><p class="muted">यह स्थानीय बैकअप है, ऑनलाइन सिंक्रोनाइज़ेशन नहीं। बैकअप को सुरक्षित जगह पर रखें; इसमें मोबाइल नंबर और भुगतान जानकारी हो सकती है।</p></div>
     </section>
     <section id="page-users" class="page hidden">
-      <div class="panel"><div class="panel-head"><div><h2>यूज़र मैनेजमेंट</h2><p class="muted">Admin नए सरपंच/सचिव या ऑपरेटर बना सकता है। सरपंच/सचिव केवल अपनी पंचायत के पंप ऑपरेटर बना सकते हैं। डेमो अकाउंट इसी ब्राउज़र में सेव होंगे।</p></div></div>
+      <div class="panel"><div class="panel-head"><div><h2>यूज़र मैनेजमेंट</h2><p class="muted">Admin नए सरपंच/सचिव या ऑपरेटर बना सकता है। सरपंच/सचिव केवल अपनी पंचायत के पंप ऑपरेटर बना सकते हैं।</p></div></div>
       <form id="userForm" class="form-grid">
         <label>पूरा नाम<input id="newUserName" required></label><label>मोबाइल नंबर<input id="newUserMobile" inputmode="numeric" maxlength="10" pattern="[0-9]{10}" placeholder="10 अंक"></label>
         <label>भूमिका<select id="newUserRole"><option value="panchayat">सरपंच / सचिव</option><option value="operator">पंप ऑपरेटर</option></select></label><label>पंचायत<select id="newUserPanchayat" required></select></label><label id="newUserVillageWrap" class="full">किस गाँव में ऑपरेटर रहेगा?<select id="newUserVillage" required></select></label>
@@ -124,7 +174,7 @@
       <div class="table-wrap"><table><thead><tr><th>नाम</th><th>यूज़रनेम</th><th>मोबाइल</th><th>भूमिका</th><th>पंचायत</th><th>गाँव</th><th>स्थिति</th><th>कार्य</th></tr></thead><tbody id="userRows"></tbody></table></div>
       </div>
     </section>
-    <div class="bottom-row"><button id="backBtn" class="secondary">← पिछला पृष्ठ</button><span class="muted">डेमो प्रोटोटाइप • वास्तविक सरकारी पोर्टल नहीं</span></div>
+    <div class="bottom-row"><button id="backBtn" class="secondary">← पिछला पृष्ठ</button></div>
   </main>
 </div>
 <div id="modal" class="modal hidden"><div class="modal-card"><div class="panel-head"><h2>नया हितग्राही जोड़ें</h2><button id="closeModal" class="secondary">बंद</button></div><form id="personForm" class="form-grid">
@@ -192,6 +242,7 @@ if(!Array.isArray(db.panchayats)||!Array.isArray(db.people)||!Array.isArray(db.p
 if(!Array.isArray(db.users)||!db.users.length)db.users=initialUsers.slice();
 if(!db.users.some(u=>u.username==="admin"))db.users.unshift(initialUsers[0]);
 if(!db.nextReceipt)db.nextReceipt=1001;
+if(!Array.isArray(db.bills))db.bills=[];
 // डेटा-सुरक्षित माइग्रेशन: मौजूदा पंचायतों/गाँवों के नाम या हितग्राही रिकॉर्ड को जबरन न बदलें।
 // केवल खाली/गायब फील्ड को डिफॉल्ट मान से भरें; उपयोगकर्ता का मौजूदा डेटा जस का तस रहे।
 db.panchayats.forEach(p=>{if(!Array.isArray(p.villages)||!p.villages.length)p.villages=["गाँव 1","गाँव 2","गाँव 3"];});
@@ -199,21 +250,16 @@ db.people.forEach(b=>{if(!b.village)b.village=db.panchayats.find(p=>p.id===b.pan
 db.users.forEach(u=>{if(u.role==="operator"&&!u.village)u.village=db.panchayats.find(p=>p.id===u.panchayatId)?.villages?.[0]||"गाँव 1";});
 let currentUser=null,currentPage="dashboard",previousPage="dashboard";
 function save(){
- let current=null;
  try {
   const serialized=JSON.stringify(db);
   // Keep the last successfully saved database as a recovery copy.
-  current=localStorage.getItem(STORE_KEY);
+  const current=localStorage.getItem(STORE_KEY);
   if(current) localStorage.setItem(STORE_KEY+"_last_good",current);
   localStorage.setItem(STORE_KEY,serialized);
   return true;
  } catch(err) {
-  // If a write fails (for example, storage quota is full), restore the
-  // last persisted database in memory so the UI cannot continue with an
-  // unsaved mutation. Never clear or overwrite the existing stored value.
-  try { const persisted=current ?? localStorage.getItem(STORE_KEY); if(persisted) db=JSON.parse(persisted); } catch(rollbackErr) { console.error("पुराना सेव डेटा पढ़ नहीं पाया",rollbackErr); }
   console.error("डेटा सेव नहीं हो पाया",err);
-  toast("डेटा सेव नहीं हो पाया। पुराने सेव रिकॉर्ड सुरक्षित रखे गए हैं। बैकअप डाउनलोड करें और स्टोरेज जाँचें।");
+  toast("डेटा सेव नहीं हो पाया। स्टोरेज भर सकता है—तुरंत बैकअप डाउनलोड करें।");
   return false;
  }
 }
@@ -234,7 +280,29 @@ function canManagePanchayat(){return role()==="admin"||role()==="panchayat";}
 function paidFor(b){return payments().filter(x=>x.personId===b.id).reduce((s,x)=>s+Number(x.amount),0);}
 function monthOrdinal(key){const [y,m]=String(key||monthKey).split("-").map(Number);return y*12+m;}
 function statusAtMonth(b,key){let status="active";const history=(b.statusHistory||[]).slice().sort((a,c)=>monthOrdinal(a.month)-monthOrdinal(c.month));for(const h of history){if(monthOrdinal(h.month)<=monthOrdinal(key))status=h.status;else break;}return status;}
-function billEstimate(b){const start=b.created||monthKey,end=monthKey;let count=0;for(let n=monthOrdinal(start);n<=monthOrdinal(end);n++){const y=Math.floor((n-1)/12),m=((n-1)%12)+1,key=`${y}-${String(m).padStart(2,"0")}`;if(statusAtMonth(b,key)==="active")count++;}return (count+Math.max(0,Number(b.arrearsMonths)||0))*(db.panchayats.find(p=>p.id===b.panchayatId)?.tax||0);}
+let billsGeneratedForMonth=null;
+function generateMissingMonthlyBills(){
+ if(billsGeneratedForMonth===monthKey)return;
+ let changed=false;
+ for(const b of db.people){
+  const start=b.created||monthKey;
+  for(let n=monthOrdinal(start);n<=monthOrdinal(monthKey);n++){
+   const y=Math.floor((n-1)/12),m=((n-1)%12)+1,key=`${y}-${String(m).padStart(2,"0")}`;
+   if(statusAtMonth(b,key)!=="active")continue;
+   if(db.bills.some(x=>x.personId===b.id&&x.month===key))continue;
+   const p=db.panchayats.find(x=>x.id===b.panchayatId);
+   db.bills.push({id:uid(),panchayatId:b.panchayatId,personId:b.id,month:key,amount:Math.max(0,Number(p?.tax)||0),createdAt:Date.now()});
+   changed=true;
+  }
+ }
+ billsGeneratedForMonth=monthKey;
+ if(changed)save();
+}
+function billEstimate(b){
+ generateMissingMonthlyBills();
+ const ledger=db.bills.filter(x=>x.personId===b.id).reduce((sum,x)=>sum+Math.max(0,Number(x.amount)||0),0);
+ return ledger+Math.max(0,Number(b.arrearsMonths ?? b.previousDueMonths ?? b.oldDueMonths ?? 0)||0)*(Number(db.panchayats.find(p=>p.id===b.panchayatId)?.tax)||0);
+}
 function villagePrefix(v){return ({"भावगढ़":"BH","खजूरी सोलंकी":"KJ","लक्ष्मीपुरा":"LP"}[v]||String(v||"GAON").replace(/[^A-Za-z]/g,"").slice(0,2).toUpperCase()||"GN");}
 function nextHouseholdBase(village){const p=selectedPanchayat();let max=0;db.people.filter(b=>b.panchayatId===p?.id&&b.village===village).forEach(b=>{const raw=String(b.householdBase||b.connection||"");const m=raw.match(/(?:^[A-Z]{2,4}-)?(\d+)/);if(m)max=Math.max(max,Number(m[1]));});return String(max+1).padStart(2,"0");}
 function familyOptions(village){const p=selectedPanchayat(),seen=new Map();db.people.filter(b=>b.panchayatId===p?.id&&b.village===village).forEach(b=>{let base=String(b.householdBase||"");if(!base){const c=String(b.connection||"");let m=c.match(/^[A-Z]{2,4}-(\d{1,})-(?:[A-Z])$/);if(m)base=m[1];else {m=c.match(/^[A-Z]{2,4}-(\d{1,})$/);if(m)base=m[1];else {m=c.match(/^[A-Z]{2,4}(\d+)(?:-[A-Z])?$/);if(m)base=m[1];}}}if(base){base=String(Number(base)).padStart(2,"0");const key=`${villagePrefix(village)}${base}`;if(!seen.has(key))seen.set(key,{key,base,name:b.householdName||b.name});}});return [...seen.values()].sort((a,b)=>a.base.localeCompare(b.base,undefined,{numeric:true}));}
@@ -255,6 +323,7 @@ function populatePaymentMonths(){
   const b=db.people.find(x=>x.id===$("paymentPerson").value),box=$("paymentBillMonth");
   if(!box)return;
   if(!b){box.innerHTML='<span class="muted">पहले हितग्राही चुनें।</span>';updatePaymentAmount();return;}
+  generateMissingMonthlyBills();
   const end=monthOrdinal(monthKey),created=monthOrdinal(b.created||monthKey);
   const arrears=Math.max(0,Number(b.arrearsMonths ?? b.previousDueMonths ?? b.oldDueMonths ?? 0)||0);
   const start=created-arrears,alreadyPaid=new Set();
@@ -278,6 +347,7 @@ function updatePaymentAmount(){
  const box=$("paymentBillMonth"),amount=$("paymentAmount");if(!box||!amount)return;
  const count=box.querySelectorAll('.payment-month-check:checked').length;
  amount.value=count*((selectedPanchayat()?.tax)||0);
+ const upiAmount=$("upiDisplayAmount");if(upiAmount)upiAmount.textContent=money(Number(amount.value)||0);
 }
 function dueFor(b){return Math.max(0,billEstimate(b)-paidFor(b));}
 function showPage(page,addHistory=true){
@@ -309,10 +379,10 @@ function renderDashboard(){
 function renderPeople(){
  const q=$("peopleSearch").value.trim().toLowerCase(),st=$("peopleStatus").value;
  $("peopleRows").innerHTML=people().filter(b=>(st==="all"||b.status===st)&&[b.name,b.mobile,b.connection,b.address].some(v=>String(v||"").toLowerCase().includes(q))).map(b=>`<tr><td>${safe(b.connection)}</td><td>${safe(b.name)}</td><td>${safe(b.mobile||"—")}</td><td>${safe(b.village||"—")}</td><td>${safe(b.address)} / वार्ड ${safe(b.ward||"—")}</td><td><span class="pill">${b.status==="active"?"सक्रिय":"निष्क्रिय"}</span></td><td>${money(billEstimate(b))}</td><td>${money(paidFor(b))}</td><td>${money(dueFor(b))}</td><td><button class="tiny secondary" data-pay-person="${safe(b.id)}">भुगतान</button> <button class="tiny secondary" data-edit-person="${safe(b.id)}">जानकारी बदलें</button> ${(role()==="admin"||role()==="panchayat")?`<button class="tiny secondary" data-delete-person="${safe(b.id)}">डिलीट</button>`:""} <button class="tiny secondary" data-toggle-person="${safe(b.id)}">${b.status==="active"?"निष्क्रिय करें":"सक्रिय करें"}</button></td></tr>`).join("")||'<tr><td colspan="10" class="empty">कोई रिकॉर्ड नहीं मिला।</td></tr>';
- document.querySelectorAll("[data-edit-person]").forEach(btn=>btn.onclick=()=>{const b=db.people.find(x=>x.id===btn.dataset.editPerson);if(!b)return;const allowed=role()==="admin"||(b.panchayatId===currentUser?.panchayatId&&(role()==="panchayat"||(role()==="operator"&&b.village===(currentUser.village||selectedPanchayat()?.villages?.[0]))));if(!allowed){toast("इस हितग्राही की जानकारी बदलने की अनुमति नहीं है।");return;}if(!confirm(`चेतावनी: आप ${b.name} (${b.connection}) की जानकारी अपडेट करने जा रहे हैं। आगे बढ़ने पर बदलाव सेव किए जाएँगे। क्या आप जारी रखना चाहते हैं?`))return;const name=prompt("हितग्राही का नाम",b.name);if(name===null)return;if(!name.trim()){toast("नाम खाली नहीं हो सकता।");return;}const guardian=prompt("पिता/पति का नाम",b.guardian||"");if(guardian===null)return;const mobile=prompt("मोबाइल नंबर",b.mobile||"");if(mobile===null)return;const connection=prompt("कनेक्शन क्रमांक",b.connection||"");if(connection===null)return;if(db.people.some(x=>x.id!==b.id&&x.connection.toLowerCase()===connection.trim().toLowerCase())){toast("यह कनेक्शन नंबर पहले से मौजूद है।");return;}const address=prompt("पता",b.address||"");if(address===null)return;const ward=prompt("वार्ड नंबर",b.ward||"");if(ward===null)return;let village=b.village;if(role()==="admin"||role()==="panchayat"){const p=db.panchayats.find(x=>x.id===b.panchayatId),choice=prompt("गाँव का नाम लिखें: "+(p?.villages||[]).join(", "),b.village);if(choice===null)return;if(!(p?.villages||[]).includes(choice.trim())){toast("पंचायत का सही गाँव चुनें।");return;}village=choice.trim();}b.name=name.trim();b.guardian=guardian.trim();b.mobile=mobile.trim();b.connection=connection.trim();b.address=address.trim();b.ward=ward.trim();b.village=village;if(!save())return;render();toast("हितग्राही की जानकारी अपडेट हो गई।");});
- document.querySelectorAll("[data-delete-person]").forEach(btn=>btn.onclick=()=>{const b=db.people.find(x=>x.id===btn.dataset.deletePerson);if(!b)return;if(!(role()==="admin"||(role()==="panchayat"&&b.panchayatId===currentUser?.panchayatId))){toast("हितग्राही डिलीट करने की अनुमति केवल एडमिन या पंचायत सचिव को है।");return;}if(!confirm(`विशेष चेतावनी: आप हितग्राही ${b.name} (${b.connection}) को स्थायी रूप से डिलीट करने जा रहे हैं। इससे संबंधित भुगतान रिकॉर्ड भी हटेंगे और यह जानकारी वापस नहीं लाई जा सकेगी। क्या आप निश्चित हैं?`))return;db.people=db.people.filter(x=>x.id!==b.id);db.payments=db.payments.filter(x=>x.personId!==b.id);if(!save())return;render();toast("हितग्राही और उससे जुड़े भुगतान रिकॉर्ड डिलीट कर दिए गए।");});
+ document.querySelectorAll("[data-edit-person]").forEach(btn=>btn.onclick=()=>{const b=db.people.find(x=>x.id===btn.dataset.editPerson);if(!b)return;const allowed=role()==="admin"||(b.panchayatId===currentUser?.panchayatId&&(role()==="panchayat"||(role()==="operator"&&b.village===(currentUser.village||selectedPanchayat()?.villages?.[0]))));if(!allowed){toast("इस हितग्राही की जानकारी बदलने की अनुमति नहीं है।");return;}if(!confirm(`चेतावनी: आप ${b.name} (${b.connection}) की जानकारी अपडेट करने जा रहे हैं। आगे बढ़ने पर बदलाव सेव किए जाएँगे। क्या आप जारी रखना चाहते हैं?`))return;const name=prompt("हितग्राही का नाम",b.name);if(name===null)return;if(!name.trim()){toast("नाम खाली नहीं हो सकता।");return;}const guardian=prompt("पिता/पति का नाम",b.guardian||"");if(guardian===null)return;const mobile=prompt("मोबाइल नंबर",b.mobile||"");if(mobile===null)return;const connection=prompt("कनेक्शन क्रमांक",b.connection||"");if(connection===null)return;if(db.people.some(x=>x.id!==b.id&&x.connection.toLowerCase()===connection.trim().toLowerCase())){toast("यह कनेक्शन नंबर पहले से मौजूद है।");return;}const address=prompt("पता",b.address||"");if(address===null)return;const ward=prompt("वार्ड नंबर",b.ward||"");if(ward===null)return;let village=b.village;if(role()==="admin"||role()==="panchayat"){const p=db.panchayats.find(x=>x.id===b.panchayatId),choice=prompt("गाँव का नाम लिखें: "+(p?.villages||[]).join(", "),b.village);if(choice===null)return;if(!(p?.villages||[]).includes(choice.trim())){toast("पंचायत का सही गाँव चुनें।");return;}village=choice.trim();}b.name=name.trim();b.guardian=guardian.trim();b.mobile=mobile.trim();b.connection=connection.trim();b.address=address.trim();b.ward=ward.trim();b.village=village;save();render();toast("हितग्राही की जानकारी अपडेट हो गई।");});
+ document.querySelectorAll("[data-delete-person]").forEach(btn=>btn.onclick=()=>{const b=db.people.find(x=>x.id===btn.dataset.deletePerson);if(!b)return;if(!(role()==="admin"||(role()==="panchayat"&&b.panchayatId===currentUser?.panchayatId))){toast("हितग्राही डिलीट करने की अनुमति केवल एडमिन या पंचायत सचिव को है।");return;}if(!confirm(`विशेष चेतावनी: आप हितग्राही ${b.name} (${b.connection}) को स्थायी रूप से डिलीट करने जा रहे हैं। इससे संबंधित भुगतान रिकॉर्ड भी हटेंगे और यह जानकारी वापस नहीं लाई जा सकेगी। क्या आप निश्चित हैं?`))return;db.people=db.people.filter(x=>x.id!==b.id);db.payments=db.payments.filter(x=>x.personId!==b.id);save();render();toast("हितग्राही और उससे जुड़े भुगतान रिकॉर्ड डिलीट कर दिए गए।");});
  document.querySelectorAll("[data-pay-person]").forEach(btn=>btn.onclick=()=>{showPage("payments");$("paymentPerson").value=btn.dataset.payPerson;populatePaymentMonths();});
- document.querySelectorAll("[data-toggle-person]").forEach(btn=>btn.onclick=()=>{const b=db.people.find(x=>x.id===btn.dataset.togglePerson);if(!b)return;if(role()==="operator"&&b.village!==(currentUser.village||selectedPanchayat()?.villages?.[0])){toast("आप केवल अपने गाँव के कनेक्शन की स्थिति बदल सकते हैं।");return;}const next=b.status==="active"?"inactive":"active";if(!Array.isArray(b.statusHistory))b.statusHistory=[{month:b.created||monthKey,status:"active"}];b.status=next;b.statusHistory.push({month:monthKey,status:next});if(!save())return;render();toast(next==="active"?"कनेक्शन सक्रिय कर दिया गया।":"कनेक्शन निष्क्रिय कर दिया गया। अब निष्क्रिय महीनों का नया टैक्स नहीं जुड़ेगा।");});
+ document.querySelectorAll("[data-toggle-person]").forEach(btn=>btn.onclick=()=>{const b=db.people.find(x=>x.id===btn.dataset.togglePerson);if(!b)return;if(role()==="operator"&&b.village!==(currentUser.village||selectedPanchayat()?.villages?.[0])){toast("आप केवल अपने गाँव के कनेक्शन की स्थिति बदल सकते हैं।");return;}const next=b.status==="active"?"inactive":"active";if(!Array.isArray(b.statusHistory))b.statusHistory=[{month:b.created||monthKey,status:"active"}];b.status=next;b.statusHistory.push({month:monthKey,status:next});save();render();toast(next==="active"?"कनेक्शन सक्रिय कर दिया गया।":"कनेक्शन निष्क्रिय कर दिया गया। अब निष्क्रिय महीनों का नया टैक्स नहीं जुड़ेगा।");});
 }
 function renderPayments(){
  const previousPerson=$("paymentPerson").value;
@@ -324,11 +394,33 @@ function renderPayments(){
  populatePaymentMonths();
 }
 function renderReports(){
- const list=people(),billed=list.reduce((s,b)=>s+billEstimate(b),0),paid=payments().reduce((s,x)=>s+x.amount,0);
- $("reportBilled").textContent=money(billed);$("reportPaid").textContent=money(paid);$("reportDue").textContent=money(Math.max(0,billed-paid));
- const q=$("reportSearch").value.trim().toLowerCase(),st=$("reportStatus").value;
+ generateMissingMonthlyBills();
+ const list=people(), billed=list.reduce((s,b)=>s+billEstimate(b),0), paid=payments().reduce((s,x)=>s+Number(x.amount||0),0);
+ $("reportBilled").textContent=money(billed); $("reportPaid").textContent=money(paid); $("reportDue").textContent=money(Math.max(0,billed-paid));
+ const sel=$("reportMonth");
+ if(sel){
+  const prior=sel.value||monthKey, keys=new Set([monthKey]);
+  db.bills.filter(x=>x.panchayatId===selectedPanchayat()?.id).forEach(x=>keys.add(x.month));
+  payments().forEach(x=>(Array.isArray(x.billMonths)&&x.billMonths.length?x.billMonths:[x.billMonth].filter(Boolean)).forEach(k=>keys.add(k)));
+  const sorted=[...keys].filter(Boolean).sort((a,b)=>monthOrdinal(b)-monthOrdinal(a));
+  sel.innerHTML=sorted.map(k=>`<option value="${safe(k)}">${safe(paymentMonthLabel(k))}</option>`).join("");
+  if(sorted.includes(prior))sel.value=prior;
+  const mk=sel.value||monthKey; let totalBill=0,totalPaid=0;
+  const rows=list.map(person=>{
+   const bill=db.bills.filter(x=>x.personId===person.id&&x.month===mk).reduce((s,x)=>s+Number(x.amount||0),0);
+   const paidMonth=payments().filter(x=>x.personId===person.id).reduce((s,x)=>{
+    const months=Array.isArray(x.billMonths)&&x.billMonths.length?x.billMonths:[x.billMonth].filter(Boolean);
+    return s+(months.includes(mk)?Number(x.amount||0)/Math.max(1,months.length):0);
+   },0);
+   totalBill+=bill; totalPaid+=paidMonth; return {person,bill,paidMonth,due:Math.max(0,bill-paidMonth)};
+  });
+  $("monthBilled").textContent=money(totalBill); $("monthPaid").textContent=money(totalPaid); $("monthDue").textContent=money(Math.max(0,totalBill-totalPaid));
+  $("monthReportRows").innerHTML=rows.map(r=>`<tr><td>${safe(r.person.connection)}</td><td>${safe(r.person.name)}</td><td>${money(r.bill)}</td><td>${money(r.paidMonth)}</td><td>${money(r.due)}</td></tr>`).join("")||'<tr><td colspan="5" class="empty">कोई रिकॉर्ड नहीं।</td></tr>';
+ }
+ const q=$("reportSearch").value.trim().toLowerCase(), st=$("reportStatus").value;
  $("reportRows").innerHTML=list.filter(b=>[b.name,b.connection,b.mobile].some(v=>String(v||"").toLowerCase().includes(q))).filter(b=>st==="all"||(st==="due"?dueFor(b)>0:dueFor(b)===0)).map(b=>`<tr><td>${safe(b.connection)}</td><td>${safe(b.name)}</td><td>${money(billEstimate(b))}</td><td>${money(paidFor(b))}</td><td>${money(dueFor(b))}</td></tr>`).join("")||'<tr><td colspan="5" class="empty">कोई रिकॉर्ड नहीं।</td></tr>';
 }
+$("reportMonth")?.addEventListener("change",renderReports);
 function renderSettings(){
  const backupBtn=$("backupJsonBtn"),restoreInput=$("restoreJsonFile");if(backupBtn)backupBtn.disabled=role()!=="admin";if(restoreInput)restoreInput.disabled=role()!=="admin";
  const p=selectedPanchayat();$("taxAmount").value=p?.tax??50;
@@ -367,10 +459,10 @@ function renderUsers(){
      const status=prompt("स्थिति लिखें: active या inactive",u.active?"active":"inactive");if(status===null)return;if(!["active","inactive"].includes(status.trim().toLowerCase())){toast("स्थिति active या inactive लिखें।");return;}nextActive=status.trim().toLowerCase()==="active";
      const pass=prompt("नया पासवर्ड लिखें (खाली छोड़ें तो पुराना रहेगा):","");if(pass===null)return;if(pass.trim())nextPassword=pass;
    } else if(u.role==="operator") {const p=db.panchayats.find(x=>x.id===u.panchayatId);const villages=p?.villages||[];const choice=prompt("ऑपरेटर का गाँव चुनें, नंबर लिखें:\n"+villages.map((v,i)=>`${i+1}. ${v}`).join("\n"),String(Math.max(1,villages.indexOf(u.village)+1)));if(choice===null)return;const index=Number(choice)-1;if(!Number.isInteger(index)||index<0||index>=villages.length){toast("गाँव का सही नंबर चुनें।");return;}nextVillage=villages[index];}
-   u.name=name.trim();u.username=usern;u.mobile=mob;u.role=nextRole;u.panchayatId=nextPid;u.village=nextVillage;u.active=nextActive;u.password=nextPassword;if(!save())return;renderUsers();if(currentUser?.id===u.id){$("userLabel").textContent=u.name;$("roleBadge").textContent=u.role==="admin"?"Admin":u.role==="panchayat"?"सरपंच/सचिव":"ऑपरेटर";}toast("यूज़र की जानकारी अपडेट हो गई।");
+   u.name=name.trim();u.username=usern;u.mobile=mob;u.role=nextRole;u.panchayatId=nextPid;u.village=nextVillage;u.active=nextActive;u.password=nextPassword;save();renderUsers();if(currentUser?.id===u.id){$("userLabel").textContent=u.name;$("roleBadge").textContent=u.role==="admin"?"Admin":u.role==="panchayat"?"सरपंच/सचिव":"ऑपरेटर";}toast("यूज़र की जानकारी अपडेट हो गई।");
  });
- document.querySelectorAll("[data-delete-user]").forEach(btn=>btn.onclick=()=>{const u=db.users.find(x=>x.id===btn.dataset.deleteUser);if(!u)return;if(!(role()==="admin"||(role()==="panchayat"&&u.role==="operator"&&u.panchayatId===ownPid))){toast("इस यूज़र को डिलीट करने की अनुमति नहीं है।");return;}if(u.id===currentUser?.id){toast("जिस अकाउंट से लॉगिन हैं, उसे डिलीट नहीं कर सकते।");return;}if(!confirm(`विशेष चेतावनी: आप यूज़र ${u.name} (${u.username}) को स्थायी रूप से डिलीट करने जा रहे हैं। डिलीट होने के बाद इसे वापस नहीं लाया जा सकेगा। क्या आप निश्चित हैं?`))return;db.users=db.users.filter(x=>x.id!==u.id);if(!save())return;renderUsers();toast("यूज़र डिलीट कर दिया गया।");});
- document.querySelectorAll("[data-toggle-user]").forEach(btn=>btn.onclick=()=>{const u=db.users.find(x=>x.id===btn.dataset.toggleUser);if(!u)return;if(role()!=="admin"&&!(role()==="panchayat"&&u.role==="operator"&&u.panchayatId===ownPid)){toast("इस यूज़र पर अनुमति नहीं है।");return;}u.active=!u.active;if(!save())return;renderUsers();toast("यूज़र की स्थिति बदल दी गई।");});
+ document.querySelectorAll("[data-delete-user]").forEach(btn=>btn.onclick=()=>{const u=db.users.find(x=>x.id===btn.dataset.deleteUser);if(!u)return;if(!(role()==="admin"||(role()==="panchayat"&&u.role==="operator"&&u.panchayatId===ownPid))){toast("इस यूज़र को डिलीट करने की अनुमति नहीं है।");return;}if(u.id===currentUser?.id){toast("जिस अकाउंट से लॉगिन हैं, उसे डिलीट नहीं कर सकते।");return;}if(!confirm(`विशेष चेतावनी: आप यूज़र ${u.name} (${u.username}) को स्थायी रूप से डिलीट करने जा रहे हैं। डिलीट होने के बाद इसे वापस नहीं लाया जा सकेगा। क्या आप निश्चित हैं?`))return;db.users=db.users.filter(x=>x.id!==u.id);save();renderUsers();toast("यूज़र डिलीट कर दिया गया।");});
+ document.querySelectorAll("[data-toggle-user]").forEach(btn=>btn.onclick=()=>{const u=db.users.find(x=>x.id===btn.dataset.toggleUser);if(!u)return;if(role()!=="admin"&&!(role()==="panchayat"&&u.role==="operator"&&u.panchayatId===ownPid)){toast("इस यूज़र पर अनुमति नहीं है।");return;}u.active=!u.active;save();renderUsers();toast("यूज़र की स्थिति बदल दी गई।");});
 }
 function render(){if(!currentUser)return;renderPanchayats();renderDashboard();renderPeople();renderPayments();renderReports();renderSettings();renderUsers();}
 function enterApp(user){
@@ -401,15 +493,30 @@ $("personForm").addEventListener("submit",e=>{
  if(!p||(role()!=="admin"&&p.id!==currentUser.panchayatId)){toast("आप केवल अपनी पंचायत में हितग्राही जोड़ सकते हैं।");return;}
  if(role()==="operator"&&village!==(currentUser.village||p?.villages?.[0])){toast("आप केवल अपने निर्धारित गाँव में हितग्राही जोड़ सकते हैं।");return;}if(people().some(b=>b.connection.toLowerCase()===connection.toLowerCase())){toast("यह कनेक्शन नंबर पहले से है।");return;}
  if(!/^[A-Z]{2,4}\d{2,}(?:-[A-Z])?$/.test(connection)){toast("कनेक्शन नंबर सही नहीं बन पाया।");return;}if(db.people.some(b=>b.panchayatId===p.id&&b.connection.toLowerCase()===connection.toLowerCase())){toast("यह कनेक्शन नंबर पहले से मौजूद है। दूसरा अक्षर चुनें।");return;}db.people.push({id:uid(),panchayatId:p.id,village,name,householdBase:base,householdKey,householdName:name,connection,guardian:$("personGuardian").value.trim(),mobile:$("personMobile").value.trim(),connection,address:$("personAddress").value.trim(),ward:$("personWard").value.trim(),status:$("personActive").value,created:monthKey,arrearsMonths:$("personType").value==="old"?Math.max(0,Number($("oldDueMonths").value)||0):0,statusHistory:[{month:monthKey,status:$("personActive").value}]});
- if(!save())return;$("modal").classList.add("hidden");$("personForm").reset();render();toast($("personType").value==="old"?"पुराना हितग्राही और पिछला बकाया सेव हो गया।":"नया हितग्राही सेव हो गया।");
+ save();$("modal").classList.add("hidden");$("personForm").reset();render();toast($("personType").value==="old"?"पुराना हितग्राही और पिछला बकाया सेव हो गया।":"नया हितग्राही सेव हो गया।");
 });
 $("paymentDate").value=dateKey;populatePaymentMonths();$("paymentPerson").addEventListener("change",populatePaymentMonths);
+$("paymentMethod").addEventListener("change",()=>{const isUpi=$("paymentMethod").value==="UPI";$("upiPaymentPanel").classList.toggle("hidden",!isUpi);$("upiReceivedConfirm").checked=false;const submit=$("paymentForm").querySelector('button[type="submit"]');if(submit)submit.textContent=isUpi?"भुगतान प्राप्त होने की पुष्टि करें और रसीद बनाएं":"भुगतान सेव करें";updatePaymentAmount();});
 $("paymentForm").addEventListener("submit",e=>{
- e.preventDefault();if(!["admin","panchayat","operator"].includes(role())){toast("भुगतान दर्ज करने की अनुमति नहीं है।");return;}if($("paymentMethod").value==="UPI (डेमो नहीं)"){toast("UPI लाइव नहीं है; भुगतान सेव नहीं किया गया।");return;}
+ e.preventDefault();if(!["admin","panchayat","operator"].includes(role())){toast("भुगतान दर्ज करने की अनुमति नहीं है।");return;}if($("paymentMethod").value==="UPI"&&!$("upiReceivedConfirm")?.checked){toast("पहले UPI भुगतान प्राप्त होने की पुष्टि करें।");return;}
  const b=db.people.find(b=>b.id===$("paymentPerson").value),amount=Number($("paymentAmount").value);
  if(!b||(role()!=="admin"&&b.panchayatId!==currentUser.panchayatId)||(role()==="operator"&&b.village!==(currentUser.village||selectedPanchayat()?.villages?.[0]))||!Number.isFinite(amount)||amount<=0){toast("अपनी पंचायत का हितग्राही और सही राशि चुनें।");return;}
  const billMonths=[...$("paymentBillMonth").querySelectorAll(".payment-month-check:checked")].map(o=>o.value);if(!billMonths.length){toast("कम से कम एक महीना चुनें।");return;}const expectedAmount=billMonths.length*(Number(selectedPanchayat()?.tax)||0);if(amount!==expectedAmount){toast(`चुने गए ${billMonths.length} महीने की सही राशि ${money(expectedAmount)} है। महीने या राशि ठीक करें।`);return;}const billMonth=billMonths[0];const x={id:uid(),panchayatId:b.panchayatId,personId:b.id,amount:Math.round(amount),billMonth,billMonths,date:$("paymentDate").value||dateKey,method:$("paymentMethod").value,note:$("paymentNote").value.trim(),receipt:"JJM-"+db.nextReceipt++,createdAt:Date.now()};
- const smsRequested=$("sendPaymentSms")?.checked&&Boolean(String(b.mobile||"").trim());db.payments.push(x);if(!save())return;render();$("receipt").classList.remove("hidden");const smsMessage=smsRequested?`<p class="notice"><b>SMS विकल्प चुना गया:</b> ${safe(b.mobile)} पर रसीद का संदेश भेजने के लिए चुना गया है। <b>यह केवल डेमो है—SMS वास्तव में नहीं भेजा गया।</b></p>`:`<p class="muted">${!String(b.mobile||"").trim()?"हितग्राही का मोबाइल नंबर दर्ज नहीं है, इसलिए SMS विकल्प उपलब्ध नहीं है।":"SMS भेजने का विकल्प नहीं चुना गया।"}</p>`;$("receipt").innerHTML=`<h3>डेमो रसीद</h3><p>रसीद: <b>${safe(x.receipt)}</b></p><p>हितग्राही: ${safe(b.name)}</p><p>राशि: ${money(x.amount)}</p><p>टैक्स का महीना: ${safe(paymentMonthsLabel(x))}</p><p>दिनांक: ${safe(x.date)}</p>${smsMessage}<button class="secondary" onclick="printReceipt()">प्रिंट करें</button>`;$("paymentForm").reset();$("paymentDate").value=dateKey;populatePaymentMonths();toast("डेमो भुगतान सेव हो गया।");
+ const hasMobile=Boolean(String(b.mobile||"").trim());const smsRequested=$("sendPaymentSms")?.checked&&hasMobile;const whatsappRequested=$("sendPaymentWhatsApp")?.checked&&hasMobile;
+ // Open the WhatsApp tab directly during the submit action to reduce popup blocking.
+ const whatsappTab=whatsappRequested?window.open("about:blank","_blank"):null;
+ db.payments.push(x);save();render();$("receipt").classList.remove("hidden");
+ const panchayatName=String(selectedPanchayat()?.name||selectedPanchayat()?.panchayatName||"ग्राम पंचायत").trim();
+ const message=`💧 ग्राम जल सेवा\n🏛️ ग्राम पंचायत ${panchayatName}\n\nजल कर भुगतान रसीद\nरसीद: ${x.receipt}\nहितग्राही: ${b.name}\nराशि: ₹${x.amount}\nटैक्स का महीना: ${paymentMonthsLabel(x)}\nदिनांक: ${x.date}\n\n🙏 जल कर जमा करने हेतु धन्यवाद! कृपया हर माह 15 तारीख से पहले भुगतान करें, ताकि ₹45 अतिरिक्त विलंब शुल्क से बच सकें।`;
+ const phone=String(b.mobile||"").replace(/\D/g,"");const waPhone=phone.length===10?"91"+phone:phone;
+ const waUrl=`https://wa.me/${encodeURIComponent(waPhone)}?text=${encodeURIComponent(message)}`;
+ const smsUrl=`sms:${phone}?body=${encodeURIComponent(message)}`;
+ let notice="";if(($("sendPaymentSms")?.checked||$("sendPaymentWhatsApp")?.checked)&&!hasMobile)notice='<p class="muted">हितग्राही का मोबाइल नंबर दर्ज नहीं है।</p>';
+ const actions=`${whatsappRequested?`<a class="secondary action-link" href="${waUrl}" target="_blank" rel="noopener">WhatsApp पर संदेश खोलें</a>`:""}${smsRequested?`<a class="secondary action-link" href="${smsUrl}">SMS में संदेश खोलें</a>`:""}`;
+ $("receipt").innerHTML=`<h3>भुगतान रसीद</h3><p>रसीद: <b>${safe(x.receipt)}</b></p><p>हितग्राही: ${safe(b.name)}</p><p>राशि: ${money(x.amount)}</p><p>टैक्स का महीना: ${safe(paymentMonthsLabel(x))}</p><p>दिनांक: ${safe(x.date)}</p>${notice}<div class="message-actions">${actions}</div><button class="secondary" onclick="printReceipt()">प्रिंट करें</button>`;
+ if(whatsappRequested){if(whatsappTab){whatsappTab.location.href=waUrl;}else{toast("ब्राउज़र ने WhatsApp टैब रोका। रसीद के नीचे 'WhatsApp पर संदेश खोलें' दबाएँ।");}}
+ if(smsRequested&&!whatsappRequested){window.location.href=smsUrl;}
+ $("paymentForm").reset();$("paymentDate").value=dateKey;$("upiPaymentPanel").classList.add("hidden");$("upiReceivedConfirm").checked=false;$("paymentForm").querySelector('button[type="submit"]').textContent="भुगतान सेव करें";populatePaymentMonths();toast("भुगतान सेव हो गया।");
 });
 $("panchayatForm").addEventListener("submit",e=>{
  e.preventDefault();if(role()!=="admin")return;const d=$("officialDistrict").value,t=$("officialTehsil").value,code=$("officialPanchayat").value;
@@ -418,9 +525,9 @@ $("panchayatForm").addEventListener("submit",e=>{
  const name=rows[0].panchayat,villages=uniqueSorted(rows.map(r=>r.village)),block="";
  if(db.panchayats.some(p=>String(p.officialCode||"")===String(code)&&String(p.district||"")===d&&String(p.tehsil||"")===t)){toast("यह आधिकारिक ग्राम पंचायत पहले से जोड़ी गई है।");return;}
  if(db.panchayats.some(p=>String(p.name||"").toLowerCase()===name.toLowerCase()&&String(p.district||"").toLowerCase()===d.toLowerCase()&&String(p.tehsil||"").toLowerCase()===t.toLowerCase())){toast("यह पंचायत इसी जिला और तहसील में पहले से मौजूद है।");return;}
- const p={id:uid(),name,block,district:d,tehsil:t,officialCode:String(code),tax:50,villages};db.panchayats.push(p);if(!save())return;$("panchayatSelect").value=p.id;$("panchayatForm").reset();render();toast("आधिकारिक पंचायत और मैप किए गए गाँव सेव हो गए।");
+ const p={id:uid(),name,block,district:d,tehsil:t,officialCode:String(code),tax:50,villages};db.panchayats.push(p);if(!save()){db.panchayats.pop();return;}$("panchayatSelect").value=p.id;$("panchayatForm").reset();render();toast("आधिकारिक पंचायत और मैप किए गए गाँव सेव हो गए।");
 });
-$("taxForm").addEventListener("submit",e=>{e.preventDefault();if(!canManagePanchayat()){toast("टैक्स बदलने की अनुमति केवल Admin और सरपंच/सचिव को है।");return;}const p=selectedPanchayat(),n=Number($("taxAmount").value);if(!p||(role()!=="admin"&&p.id!==currentUser.panchayatId)||!Number.isFinite(n)||n<0){toast("अपनी पंचायत का सही टैक्स दर्ज करें।");return;}p.tax=Math.round(n);if(!save())return;render();toast("मासिक टैक्स सेव हो गया।");});
+$("taxForm").addEventListener("submit",e=>{e.preventDefault();if(!canManagePanchayat()){toast("टैक्स बदलने की अनुमति केवल Admin और सरपंच/सचिव को है।");return;}const p=selectedPanchayat(),n=Number($("taxAmount").value);if(!p||(role()!=="admin"&&p.id!==currentUser.panchayatId)||!Number.isFinite(n)||n<0){toast("अपनी पंचायत का सही टैक्स दर्ज करें।");return;}p.tax=Math.round(n);save();render();toast("मासिक टैक्स सेव हो गया।");});
 $("userForm").addEventListener("submit",e=>{
  e.preventDefault();if(role()!=="admin"&&role()!=="panchayat"){toast("अनुमति नहीं है।");return;}
  const name=$("newUserName").value.trim(),mobile=$("newUserMobile").value.trim(),usern=$("newUsername").value.trim().toLowerCase(),password=$("newUserPassword").value,urole=role()==="panchayat"?"operator":$("newUserRole").value,pid=role()==="panchayat"?currentUser.panchayatId:$("newUserPanchayat").value;
@@ -430,7 +537,7 @@ $("userForm").addEventListener("submit",e=>{
  if(usern==="admin"||db.users.some(u=>u.username.toLowerCase()===usern)){toast("यह यूज़रनेम पहले से इस्तेमाल है।");return;}
  if(password.length<6){toast("पासवर्ड कम से कम 6 अक्षर का रखें।");return;}
  if(mobile&& !/^\d{10}$/.test(mobile)){toast("मोबाइल नंबर 10 अंकों का होना चाहिए।");return;}
- const village=urole==="operator"?$("newUserVillage").value:"";if(urole==="operator"&&!db.panchayats.find(p=>p.id===pid)?.villages?.includes(village)){toast("ऑपरेटर के लिए सही गाँव चुनें।");return;}db.users.push({id:uid(),username:usern,password,name,mobile,role:urole,panchayatId:pid,village,active:true});if(!save())return;$("userForm").reset();renderUsers();toast("नया डेमो यूज़र बन गया। अब उसी यूज़रनेम और पासवर्ड से लॉगिन कर सकते हैं।");
+ const village=urole==="operator"?$("newUserVillage").value:"";if(urole==="operator"&&!db.panchayats.find(p=>p.id===pid)?.villages?.includes(village)){toast("ऑपरेटर के लिए सही गाँव चुनें।");return;}db.users.push({id:uid(),username:usern,password,name,mobile,role:urole,panchayatId:pid,village,active:true});save();$("userForm").reset();renderUsers();toast("नया यूज़र बन गया। अब उसी यूज़रनेम और पासवर्ड से लॉगिन कर सकते हैं।");
 });
 $("backupJsonBtn").onclick=()=>{
  if(role()!=="admin"){toast("पूरा डेटा बैकअप केवल Admin डाउनलोड कर सकता है।");return;}
@@ -453,10 +560,26 @@ $("restoreJsonFile").addEventListener("change",async e=>{
  }catch(err){alert("Restore नहीं हुआ: "+(err?.message||"फाइल पढ़ने में समस्या"));}
  finally{e.target.value="";}
 });
+function reportExportRows(){
+ return [["कनेक्शन","हितग्राही","कुल बिल (₹)","कुल भुगतान (₹)","बकाया (₹)"],...people().map(b=>[b.connection,b.name,billEstimate(b),paidFor(b),dueFor(b)])];
+}
+function downloadReportBlob(blob,filename){
+ const url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
 $("exportBtn").onclick=()=>{
- const rows=[["कनेक्शन","हितग्राही","कुल बिल","कुल भुगतान","बकाया"],...people().map(b=>[b.connection,b.name,billEstimate(b),paidFor(b),dueFor(b)])];
+ const rows=reportExportRows();
  const csv="\ufeff"+rows.map(r=>r.map(v=>`"${String(v).replace(/"/g,'""')}"`).join(",")).join("\r\n");
- const blob=new Blob([csv],{type:"text/csv;charset=utf-8;"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="jal-kar-report.csv";a.click();URL.revokeObjectURL(url);
+ downloadReportBlob(new Blob([csv],{type:"text/csv;charset=utf-8;"}),"jal-kar-report.csv");
+};
+$("exportExcelBtn").onclick=()=>{
+ const rows=reportExportRows();
+ const table=rows.map((r,i)=>`<tr>${r.map(v=>i===0?`<th>${escapeExcelHtml(v)}</th>`:`<td>${escapeExcelHtml(v)}</td>`).join("")}</tr>`).join("");
+ const html=`<html><head><meta charset="utf-8"></head><body><h2>जल कर वसूली रिपोर्ट</h2><table border="1">${table}</table></body></html>`;
+ downloadReportBlob(new Blob(["\ufeff",html],{type:"application/vnd.ms-excel;charset=utf-8;"}),"jal-kar-report.xls");
+};
+function escapeExcelHtml(value){return String(value??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
+$("exportPdfBtn").onclick=()=>{
+ if(!$("page-reports").classList.contains("hidden")){document.body.classList.add("printing-report");const cleanup=()=>{document.body.classList.remove("printing-report");window.removeEventListener("afterprint",cleanup);};window.addEventListener("afterprint",cleanup);window.print();setTimeout(cleanup,1500);}
 };
 window.addEventListener("popstate",()=>{if(currentUser)showPage("dashboard",false);});
 initOfficialLocationPickers();
