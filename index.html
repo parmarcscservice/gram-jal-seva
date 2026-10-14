@@ -402,7 +402,7 @@ function renderReports(){
   const prior=sel.value||monthKey, keys=new Set([monthKey]);
   db.bills.filter(x=>x.panchayatId===selectedPanchayat()?.id).forEach(x=>keys.add(x.month));
   payments().forEach(x=>(Array.isArray(x.billMonths)&&x.billMonths.length?x.billMonths:[x.billMonth].filter(Boolean)).forEach(k=>keys.add(k)));
-  const sorted=[...keys].filter(Boolean).sort((a,b)=>monthOrdinal(b)-monthOrdinal(a));
+  const nowParts=monthKey.split("-").map(Number);for(let y=nowParts[0],m=1;m<=nowParts[1];m++){keys.add(`${y}-${String(m).padStart(2,"0")}`);}const sorted=[...keys].filter(Boolean).sort((a,b)=>monthOrdinal(b)-monthOrdinal(a));
   sel.innerHTML=sorted.map(k=>`<option value="${safe(k)}">${safe(paymentMonthLabel(k))}</option>`).join("");
   if(sorted.includes(prior))sel.value=prior;
   const mk=sel.value||monthKey; let totalBill=0,totalPaid=0;
