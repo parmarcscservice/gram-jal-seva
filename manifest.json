@@ -1,0 +1,17 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "ग्राम जल सेवा",
+  "orientation": "any",
+  "scope": "https://parmarcscservice.github.io/gram-jal-seva/",
+  "short_name": "जल सेवा",
+  "start_url": "https://parmarcscservice.github.io/gram-jal-seva/",
+  "theme_color": "#ffffff",
+  "id": "gram-jal-seva",
+  "description": "ग्राम पंचायत नल जल कर प्रबंधन पोर्टल",
+  "lang": "hi",
+  "categories": [
+    "business"
+  ]
+}
